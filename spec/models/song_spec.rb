@@ -15,6 +15,6 @@ RSpec.describe Song, type: :model do
 
   it "belongs to its genre instance" do
     @song=Song.create(name:"Pickjuice",artist_id:1, genre_id:1)
-    expect(@song.artist.songs).to include(@song)
+    expect(Genre.find(1).songs).to include(@song)
   end
 end
