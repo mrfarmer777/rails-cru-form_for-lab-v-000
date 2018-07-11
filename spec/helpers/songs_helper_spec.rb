@@ -13,7 +13,7 @@ require 'rails_helper'
 RSpec.describe SongsHelper, type: :helper do
   #pending "add some examples to (or delete) #{__FILE__}"
   it "checks for strong params" do
-    visit new_song_path
+    visit new_songs_path
     fill_in :name => "Pickles"
     fill_in :artist_id => 1
     fill_in :genre_id => 1
