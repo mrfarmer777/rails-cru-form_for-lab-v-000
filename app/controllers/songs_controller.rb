@@ -1,4 +1,6 @@
 class SongsController < ApplicationController
+  include songs_helper
+
   def new
     @song=Song.new
   end
